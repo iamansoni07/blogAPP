@@ -1,7 +1,13 @@
+import Navbar from "./components/navbar.component";
+import About from "./components/about.component";
+
 const App = () => {
     return (
-        <h1>MERN Blogging website by Aman Soni</h1>
-    )
+        <>
+            <Navbar />
+            <About />
+        </>
+    );
 }
 
 export default App;
