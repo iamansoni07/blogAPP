@@ -6,8 +6,6 @@ const App = () => {
     return (
         <>
             <Navbar />
-            <About />
-            <Input />
         </>
     );
 }
