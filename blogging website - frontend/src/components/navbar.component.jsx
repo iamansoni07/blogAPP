@@ -12,8 +12,11 @@ const Navbar = () => {
       </Link>
 
       <div
-        className="absolute bg-white w-full left-0 top-full mt-0.5 border-b border-grey py-4 px-[5vw]
-                      md:border-0 md:block md:relative md:inset-0 md:p-0 md:w-auto"
+        className={
+          "absolute bg-white w-full left-0 top-full mt-0.5 border-b border-grey py-4 px-[5vw] " +
+          "md:border-0 md:block md:relative md:inset-0 md:p-0 md:w-auto " +
+          (searchBoxVisibility ? "show" : "hide")
+        }
       >
         <input
           type="text"
@@ -39,11 +42,11 @@ const Navbar = () => {
         </button>
       </div> */}
 
-      {/* <div className="flex items-center gap-3 md:gap-6 ml-auto">
+      <div className="flex items-center gap-3 md:gap-6 ml-auto">
         <button className="bg-grey w-12 h-12 rounded-full flex items-center justify-center md:hidden">
           <i className="fi fi-rr-search text-xl"></i>
         </button>
-      </div> */}
+      </div>
 
       <div className="flex items-center gap-3 md:gap-6 ml-auto">
         <button
@@ -53,7 +56,6 @@ const Navbar = () => {
           <i className="fi fi-rr-search text-xl"></i>
         </button>
       </div>
-      
     </nav>
   );
 };
