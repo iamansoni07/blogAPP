@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import logo from "../imgs/logo.png";
 
 const Navbar = () => {
-
   const [searchBoxVisibility, setSearchBoxVisibility] = useState(false);
 
   return (
@@ -40,11 +39,21 @@ const Navbar = () => {
         </button>
       </div> */}
 
-      <div className="flex items-center gap-3 md:gap-6 ml-auto">
+      {/* <div className="flex items-center gap-3 md:gap-6 ml-auto">
         <button className="bg-grey w-12 h-12 rounded-full flex items-center justify-center md:hidden">
           <i className="fi fi-rr-search text-xl"></i>
         </button>
+      </div> */}
+
+      <div className="flex items-center gap-3 md:gap-6 ml-auto">
+        <button
+          className="md:hidden bg-grey w-12 h-12 rounded-full flex items-center justify-center"
+          onClick={() => setSearchBoxVisibility((currentVal) => !currentVal)}
+        >
+          <i className="fi fi-rr-search text-xl"></i>
+        </button>
       </div>
+      
     </nav>
   );
 };
