@@ -1,13 +1,13 @@
+import React from "react"; // Import React if using a version prior to React 17
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar.component";
-import About from "./components/about.component";
-import Input from "./components/input.component";
 
 const App = () => {
-    return (
-        <>
-            <Navbar />
-        </>
-    );
-}
+  return (
+    <Routes>
+      <Route path="/" element={<Navbar />} />
+    </Routes>
+  );
+};
 
 export default App;
