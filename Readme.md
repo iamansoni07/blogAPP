@@ -102,14 +102,6 @@ Frontend will be available at `http://localhost:5173`.
 
 ---
 
-## 📸 Screenshots / Demo
-
-> Add editor screenshots, comment threads, dashboard views, and blog reading interfaces.
-
-🔗 **Live Demo** (if available): [https://yourblogsite.com](#)
-
----
-
 ## 👨‍💻 Author
 
 **Aman Soni**  
